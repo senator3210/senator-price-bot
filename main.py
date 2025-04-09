@@ -33,7 +33,7 @@ def webhook():
     if message.startswith("http"):
         price = get_price_from_digikala(message)
         send_message(chat_id, f"قیمت محصول:\n{price}")
-{price}")
+
     else:
         send_message(chat_id, "لینک محصول دیجی‌کالا را ارسال کن تا قیمت را بگویم.")
     
