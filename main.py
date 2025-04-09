@@ -38,3 +38,6 @@ def webhook():
         send_message(chat_id, "لینک محصول دیجی‌کالا را ارسال کن تا قیمت را بگویم.")
     
     return "OK"
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))  # Render پورت رو با متغیر PORT می‌فرسته
+    app.run(host='0.0.0.0', port=port)
